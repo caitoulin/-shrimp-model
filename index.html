@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>315冻虾故事</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+    .loading {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: #fff;
+      background: rgba(0,0,0,0.8);
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+    }
+    .story-text {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 24px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading" class="loading">场景加载中...</div>
+  <div id="story-text" class="story-text"></div>
+</body>
+</html>
